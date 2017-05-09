@@ -1,0 +1,27 @@
+<div class="contentContainer">
+	<div class="loginContainer">
+		<form class="form-signin" ng-submit="loginFormSubmit()">
+        <h2 class="form-signin-heading">Déjà enregistré ?</h2>
+        <label for="inputEmail" class="sr-only">Courriel</label>
+        <input type="text" id="inputUsername" ng-model="user.email" class="form-control" placeholder="Courriel" autofocus>
+        <label for="inputPassword" class="sr-only">Mot de passe</label>
+        <input type="password" id="inputPassword" ng-model="user.password" class="form-control" placeholder="Mot de passe">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Rester connecté 
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block">Se connecter</button>
+        <div class="bg-danger formFeedBack" ng-show="errorMessage">{{errorMessage}}</div>
+      </form>
+	</div>
+	<div class="signupContainer">
+		<form class="form-signin" name="registrationForm">
+        <h2 class="form-signin-heading">Créer un compte:</h2>
+        <label for="inputEmail" class="sr-only">Courriel</label>
+        <input type="email" required id="inputEmail" ng-model="registrationEmail" class="form-control" placeholder="email@example.com">
+        <button class="btn btn-lg btn-info btn-block" ng-click="this.registration()">S'enregistrer</button>
+      </form>
+	</div>
+
+</div>

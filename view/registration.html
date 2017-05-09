@@ -1,0 +1,56 @@
+<form role="form" ng-submit="registrationFormSubmit()">
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+    			<input type="text" ng-model="user.first_name" name="first_name" id="first_name" class="form-control" placeholder="Prénom" required>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<input type="text" ng-model="user.last_name" name="last_name" id="last_name" class="form-control" placeholder="Nom" required>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<input type="text" ng-model="user.email" name="email" id="email" class="form-control" placeholder="Email" required>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<input type="password" ng-model="user.password" name="password" id="password" class="form-control" placeholder="Mot de passe" required>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6">
+			<div class="form-group">
+				<input type="password" ng-model="user.password_confirmation" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Confirmer mot de passe" required>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="form-group">
+		<div class="input-group number-spinner">
+			<input type="text" id="address" ng-model="user.address" name="address" class="form-control" placeholder="Addresse" ng-click="displayMap()">
+			<span class="input-group-btn data-up">
+				<button class="btn btn-lg btn-default btn-info locButton" ng-click="getUserLocation()"><span class="glyphicon glyphicon-map-marker"></span></button>
+			</span>
+		</div>
+		
+	</div>  -->
+	<div class="form-group" align="center">			
+		<button type="button" class="btn btn-lg btn-default btn-info locButton" ng-click="getUserLocation()"><span class="glyphicon glyphicon-map-marker"></span></button>
+		<input type="text" ng-model="user.lat"  ng-hide="true">
+		<input type="text" ng-model="user.long" ng-hide="true">
+		<input type="text" ng-model="user.city" ng-hide="true">
+	</div>
+
+	<div ng-show="mapShow" id="map-canvas">
+		<input type="text" id="address" ng-model="user.address" name="address" class="form-control " style="width:300px;margin-top:5px;height:30px;">
+		<div id="mapCanvas"></div>
+	</div>
+	
+	<input type="submit" value="S'enregistrer" class="btn btn-lg btn-info btn-block">
+
+	<div class="bg-danger formFeedBack" ng-show="errorMessage">{{errorMessage}}</div>
+
+</form>

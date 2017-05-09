@@ -1,0 +1,76 @@
+.form-signin {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin, .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+#inputUsername{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#inputPassword{
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+#inputEmail{
+  margin-bottom: 20px;
+}
+.contentContainer{
+  margin-bottom: 50px;
+}
+
+#mapCanvas{
+    height:400px;
+  width: 100%;
+}
+
+#map-canvas{
+  height:400px;
+  width: 100%;
+  height: 400px;
+  background-color: #CCC;
+  margin-bottom: 20px;
+  overflow: hidden;
+  -webkit-transition:all ease 0.5s;
+  transition:all ease 0.5s;
+
+}
+
+#map-canvas.ng-hide {
+  height: 0px;
+}
+.ng-hide-add, .ng-hide-remove {
+    /* ensure visibility during the transition */
+    display: block !important; /* yes, important */
+}
+
+.locButton{
+height:44px;
+width:200px;
+}
+
+.formFeedBack{
+  margin-top: 20px;
+  padding:15px;
+  font-size:16px;
+}
