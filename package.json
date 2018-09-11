@@ -1,0 +1,85 @@
+{
+  "name": "2associes-meteor-boilerplate",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "dev": "meteor run --settings settings-development.json",
+    "test": "chimp --ddp=http://localhost:3000 --browser=chrome --path=tests",
+    "test-watch": "chimp --watch --ddp=http://localhost:3000 --browser=chrome --path=tests",
+    "lint": "eslint .",
+    "pretest": "npm run lint --silent"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "allowImportExportEverywhere": true
+    },
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "settings": {
+      "import/resolver": "meteor"
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ],
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "max-len": "off",
+      "no-undef": "off",
+      "no-undef-init": "off",
+      "import/extensions": "off",
+      "import/no-extraneous-dependencies": "off",
+      "func-names": "off",
+      "meteor/no-template-lifecycle-assignments": "off",
+      "object-shorthand": "off",
+      "prefer-arrow-callback": "off",
+      "no-restricted-syntax": "off",
+      "import/prefer-default-export": "off",
+      "linebreak-style": "off",
+      "no-underscore-dangle": "off"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.51",
+    "babel-runtime": "^6.23.0",
+    "bcrypt": "^0.8.7",
+    "bootstrap": "^4.0.0-beta.3",
+    "chimp": "^0.47.2",
+    "core-js": "^2.5.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "meteor-node-stubs": "^0.4.1",
+    "moment": "^2.22.2",
+    "popper.js": "^1.13.0",
+    "simpl-schema": "^0.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-import-resolver-meteor": "^0.3.4",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-meteor": "^4.1.6",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}

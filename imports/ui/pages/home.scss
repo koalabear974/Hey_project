@@ -1,0 +1,21 @@
+main.home {
+  @extend .container;
+}
+
+.home-header {
+  @extend .jumbotron;
+  padding: 30px 15px;
+  margin-top: 30px;
+
+  @include media-breakpoint-up(md) {
+    padding: 48px 60px;
+  }
+}
+
+.home-content {
+  @extend .row, .text-center, .text-muted;
+}
+
+.home-content-text {
+  @extend .col-12, .col-md-4;
+}

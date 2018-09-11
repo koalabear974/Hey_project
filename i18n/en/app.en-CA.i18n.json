@@ -1,0 +1,39 @@
+{
+  "glossary": {},
+  "head": {
+    "title": "Meteor Boilerplate",
+    "description": "Build up your Meteor App."
+  },
+  "header": {
+    "menuIcon": "Toggle navigation",
+    "brand": "Brand",
+    "navbarLinkHome": "Home",
+    "navbarLinkCurrent": "current",
+    "navbarLinkDropdown": "Dropdown",
+    "navbarLinkDropdownOptionOne": "Action",
+    "navbarLinkDropdownOptionTwo": "Another action",
+    "navbarLinkDropdownOptionThree": "Something else here",
+    "navbarLinkDropdownOptionFour": "Separated link",
+    "navbarLinkDropdownOptionFive": "One more separated link",
+    "navbarSearchPlaceholder": "Search",
+    "navbarSearchButton": "Submit",
+    "navbarGreetings": "Hello",
+    "navbarProfile": "Profile",
+    "navbarSettings": "Settings",
+    "navbarStyleGuide": "Style Guide",
+    "navbarAdmin": "Admin"
+  },
+  "homeHeaderTitle": "Meteor Boilerplate",
+  "404notFoundHeading": "404 Not Found!",
+  "footer": {
+    "copyright": "Built with 2 Associés' METEOR BOILERPLATE@__boilerplateRelease__ and __meteorRelease__"
+  },
+  "pages": {
+    "adminHomeTitle": "Administration",
+    "adminStyleGuideTitle": "Style Guide"
+  },
+  "addToHomeScreen": {
+    "bodyText": "Install this web app on your device: tap <img src=\"/images/icons/ios-share.svg\" class=\"add-to-home-screen-share-icon\"> and then <strong>Add to Home Screen.</strong>",
+    "closeText": "<span class=\"a2h-close-icon fa fa-fw fa-times\"></span>"
+  }
+}

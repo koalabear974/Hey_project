@@ -1,0 +1,39 @@
+{
+  "glossary": {},
+  "head": {
+    "title": "Boilerplate Meteor",
+    "description": "Démarrez votre application Meteor."
+  },
+  "header": {
+    "menuIcon": "Ouvrir la navigation",
+    "brand": "Marque",
+    "navbarLinkHome": "Accueil",
+    "navbarLinkCurrent": "actuel",
+    "navbarLinkDropdown": "Menu déroulant",
+    "navbarLinkDropdownOptionOne": "Action",
+    "navbarLinkDropdownOptionTwo": "Autre action",
+    "navbarLinkDropdownOptionThree": "Autre chose ici",
+    "navbarLinkDropdownOptionFour": "Lien séparé",
+    "navbarLinkDropdownOptionFive": "Autre lien séparé",
+    "navbarSearchPlaceholder": "Recherche",
+    "navbarSearchButton": "Soumettre",
+    "navbarGreetings": "Bonjour",
+    "navbarProfile": "Profil",
+    "navbarSettings": "Paramètres",
+    "navbarStyleGuide": "Guide de style",
+    "navbarAdmin": "Administration"
+  },
+  "homeHeaderTitle": "Boilerplate Meteor",
+  "404notFoundHeading": "Erreur 404!",
+  "footer": {
+    "copyright": "Conçu avec METEOR BOILERPLATE@__boilerplateRelease__ par 2 Associés et __meteorRelease__"
+  },
+  "pages": {
+    "adminHomeTitle": "Administration",
+    "adminStyleGuideTitle": "Guide de style"
+  },
+  "addToHomeScreen": {
+    "bodyText": "Pour ajouter cette application sur l'écran d'accueil: Appuyez sur l'icône <img src=\"/images/icons/ios-share.svg\" class=\"add-to-home-screen-share-icon\"> et sélectionnez <strong>Ajouter sur l'écran d'accueil.</strong>",
+    "closeText": "<span class=\"a2h-close-icon fa fa-fw fa-times\"></span>"
+  }
+}
