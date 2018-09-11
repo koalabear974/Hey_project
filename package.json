@@ -1,0 +1,15 @@
+{
+  "name": "create-react-meteor-app",
+  "description": "Create React-Meteor apps with no build configuration.",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "6.26.0",
+    "core-js": "2.5.7",
+    "meteor-node-stubs": "0.4.1",
+    "react": "15.6.2",
+    "react-dom": "15.6.2"
+  }
+}
