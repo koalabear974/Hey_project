@@ -1,0 +1,71 @@
+.AssetList {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.AssetList__add-button {
+  flex: 0 0 40px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.AssetList__container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.AssetListItem {
+  display: flex;
+  flex: 0 0 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.AssetListItem:hover {
+  background-color: #f3f3f3;
+}
+.AssetListItem--active {
+  background-color: #e9e9e9;
+}
+
+.AssetListItem__name {
+  text-transform: capitalize;
+  flex: 1;
+}
+
+.AssetEdit, .AssetShow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.AssetEdit__buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AssetShow__main {
+  flex: 1;
+}
+
+.AssetShow__times {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+
+.AssetShow__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.AssetShow__label {
+  font-weight: bold;
+  display: block;
+}

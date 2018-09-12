@@ -1,0 +1,28 @@
+.Sidebar {
+  display: flex;
+  flex: 0 0 50px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #dbdbdb;
+}
+
+.Sidebar__types-dropdown {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  position: relative;
+  padding: 0px 32px;
+}
+
+.Sidebar__types-dropdown > .menu{
+  width: 100%;
+}
+
+.Sidebar__types-dropdown > .option{
+  text-align: center;
+}
+
+.Sidebar__types-dropdown > .default.text{
+  color: rgba(134, 134, 134, 0.87) !important;
+}

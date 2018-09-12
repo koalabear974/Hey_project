@@ -1,0 +1,23 @@
+.Header {
+  align-items: center;
+  background-color: #aaa;
+  display: flex;
+  flex: 0 0 70px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+}
+
+.Header__title {
+}
+
+.Header__title-link , .Header__title-link:visited{
+  color: white;
+  transition: color .4s ease;
+}
+
+.Header__title-link:hover, .Header__title-link:active {
+  color: #ccc;
+}
+

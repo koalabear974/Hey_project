@@ -1,18 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Meteor } from 'meteor/meteor';
+import { render } from 'react-dom';
+import { renderRoutes } from './routes.js';
 import './index.css';
-import App from './app.js';
-import registerServiceWorker from './registerServiceWorker';
-
-const Index = () => {
-  return (
-    <div>
-      <App />
-    </div>
-  )
-}
+import 'semantic-ui-css/semantic.min.css';
 
 Meteor.startup(() => {
-  ReactDOM.render(<Index />, document.querySelector('.container'));
-  registerServiceWorker();
+  render(renderRoutes(), document.getElementById('render-target'));
 });
